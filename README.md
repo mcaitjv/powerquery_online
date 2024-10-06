@@ -10,4 +10,4 @@ In this repo I created a power query script that take place in github and can be
 To get a local copy up and running follow these simple steps:
 1. **Clone the repo**:
    ```bash
-   git clone https://github.com/yourusername/awesome-project.git
+   git clone https://github.com/mcaitjv/powerquery_online.git

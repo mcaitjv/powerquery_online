@@ -1,0 +1,1 @@
+In this repo I created a power query script that take place in github and can be used in power bi desktop. This will make it possible to use a single code source for all developers. Some kind of a single source of truth

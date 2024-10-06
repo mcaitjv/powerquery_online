@@ -14,7 +14,7 @@ To get a local copy up and running follow these simple steps:
    
 ## Contact
 
-**Project Link**: https://github.com/yourusername/awesome-project
+**Project Link**: https://github.com/mcaitjv/powerquery_online
 
 **Developer's Contact**:
 

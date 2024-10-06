@@ -11,3 +11,11 @@ To get a local copy up and running follow these simple steps:
 1. **Clone the repo**:
    ```bash
    git clone https://github.com/mcaitjv/powerquery_online.git
+   
+## Contact
+
+**Project Link**: https://github.com/yourusername/awesome-project
+
+**Developer's Contact**:
+
+    Email: mucahitk@gmail.com

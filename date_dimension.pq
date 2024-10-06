@@ -1,6 +1,6 @@
 let
     // configurations start
-    Today=Date.From(DateTime.LocalNow()), // today's date
+    Today=2024-01-01, // today's date
     FromYear = 2018, // set the start year of the date dimension. dates start from 1st of January of this year
     ToYear=2021, // set the end year of the date dimension. dates end at 31st of December of this year
     StartofFiscalYear=7, // set the month number that is start of the financial year. example; if fiscal year start is July, value is 7

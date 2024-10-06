@@ -1,5 +1,22 @@
 let
+<<<<<<< HEAD
     Source = List.Dates(#date(2023,1,1),365, #duration(1,0,0,0)),
+=======
+    // configurations start
+    Today=2024-01-01, // today's date
+    FromYear = 2018, // set the start year of the date dimension. dates start from 1st of January of this year
+    ToYear=2021, // set the end year of the date dimension. dates end at 31st of December of this year
+    StartofFiscalYear=7, // set the month number that is start of the financial year. example; if fiscal year start is July, value is 7
+    firstDayofWeek=Day.Monday, // set the week's start day, values: Day.Monday, Day.Sunday....
+    // configuration end
+    FromDate=#date(FromYear,1,1),
+    ToDate=#date(ToYear,12,31),
+    Source=List.Dates(
+        FromDate,
+        Duration.Days(ToDate-FromDate)+1,
+        #duration(1,0,0,0)
+    ),
+>>>>>>> 96886f1b737b42a1354f959e20edc25a06268773
     #"Converted to Table" = Table.FromList(Source, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
     #"Renamed Columns" = Table.RenameColumns(#"Converted to Table",{{"Column1", "Date"}}),
     #"Changed Type" = Table.TransformColumnTypes(#"Renamed Columns",{{"Date", type date}}),
@@ -17,4 +34,8 @@ in Date.Year(cm) * 100 + Date.Month(cm)),
     #"Added Conditional Column1" = Table.AddColumn(#"Inserted Subtraction", "Month Type", each if [Subtraction] = 0 then "This Month" else if [Subtraction] = 1 then "Next Month" else if [Subtraction] = -1 then "Previous Month" else "Other Month"),
     #"Removed Columns" = Table.RemoveColumns(#"Added Conditional Column1",{"Current Month", "Subtraction"})
 in
+<<<<<<< HEAD
     #"Removed Columns"
+=======
+    #"Changed Type5"
+>>>>>>> 96886f1b737b42a1354f959e20edc25a06268773
